@@ -1,0 +1,6 @@
+SvelteKit may be a good option here.
+Pros:
+- Support for complex client-side interactions i.e. transitions
+- Can pretty easily build for GH Pages
+Cons:
+- Gross to the browser, but this is a fine sacrifice for the bells and whistles.
