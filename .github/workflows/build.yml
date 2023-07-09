@@ -1,5 +1,4 @@
 name: "Build and Deploy ☄️"
-description: "Builds and deploys webcrawls.github.io."
 on: [ push ]
 
 permissions:
