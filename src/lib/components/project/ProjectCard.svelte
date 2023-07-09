@@ -1,5 +1,5 @@
 <script lang="ts">
-    import {fly, fade} from 'svelte/transition';
+    import {fade} from 'svelte/transition';
     import {browser} from "$app/environment";
 
     export let author: string | undefined;
@@ -11,6 +11,8 @@
     let childIndex: number = 0;
     let textElement: HTMLElement;
     let containerElement: HTMLElement;
+    let nextElement: HTMLElement;
+    let nextBgWidth: number = 0;
     let currentText: string = "";
 
     const handleText = () => {
@@ -23,11 +25,15 @@
         }
     };
 
+    // background-image: linear-gradient(to right, var(--color-alt) 80%, transparent 80%);
+
     $: currentText = children[childIndex]
     $: currentText && setTimeout(animateContainerHeight, 5)
 
-    const animateContainerHeight = (): string => {
+    const animateContainerHeight = () => {
         if (!browser || !containerElement || !textElement) return
+
+        animateButtonProgress()
 
         const initialHeight = containerElement.offsetHeight
         const textHeight = textElement.offsetHeight
@@ -46,9 +52,14 @@
 
         animation.play()
     }
+
+    const animateButtonProgress = () => {
+        const progress = childIndex / (children.length - 1)
+        nextBgWidth = Math.round(progress * 100)
+    }
 </script>
 
-<article class="project-card">
+<article class="project-card project-card-blue">
     <div class="project-title-wrapper">
         <h1 class="project-title">
             {#if author}
@@ -89,7 +100,10 @@
         </div>
         {#if currentText}
             <div class="project-aside">
-                <button class="project-next" on:click|preventDefault={handleText}>more</button>
+                <button bind:this={nextElement} class="project-next" on:click|preventDefault={handleText}>
+                    <span class="project-next-bg" style="width: {nextBgWidth}%;"></span>
+                    more
+                </button>
             </div>
         {/if}
     </div>
