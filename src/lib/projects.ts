@@ -2,7 +2,9 @@ export const interfaces = [
     "A builder-style user interface library for Minecraft servers.",
     "I initially started interfaces back in ~2019, to solve the problem of efficiently writing user interfaces for Minecraft servers.",
     "The core idea is to use a Minecraft chest as a 'menu', arranging items and hijacking clicks to replicate the feel of a user interface.",
-    "Minecraft wasn't really designed for this, so most developers write their own library, or use an existing one."
+    "Minecraft wasn't well designed for this, so most developers use a library, finding an existing one or writing their own.",
+    "Development continued for a while, finding a few contributors working on bugfixes and a Kotlin branch.",
+    "Nowadays, it doesn't see much activity, but it's <i>mostly</i> mature, and it's on my mind to pick it back up for a few future projects :D"
 ]
 export const pages = [
     "My personal page.",
