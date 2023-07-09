@@ -8,13 +8,33 @@
 /* Style resets */
 * {
     box-sizing: border-box;
-    font-family: var(--font);
 }
 
 /* Style resets */
 body, html, h1, h2, h3, h4, h5, h6, p {
     padding: 0;
     margin: 0;
+}
+
+body, html {
+    min-height: 100vh;
+    height: 100%;
+}
+
+main {
+    max-width: 60ch;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main > section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Style resets */
@@ -33,9 +53,10 @@ html {
 
 /* Page styling */
 body {
-    margin: 2rem;
-    max-width: 60ch;
+    padding: 3rem;
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 /* Header styling */
@@ -205,14 +226,32 @@ article {
     justify-content: space-evenly;
     justify-items: center;
     align-content: space-evenly;
-    align-items: center;}
+    align-items: center;
+}
 
-.button-1 { grid-area: 1 / 1 / 2 / 2; }
-.button-2 { grid-area: 1 / 2 / 2 / 3; }
-.button-3 { grid-area: 1 / 3 / 2 / 4; }
-.button-4 { grid-area: 2 / 1 / 3 / 2; }
-.button-5 { grid-area: 2 / 2 / 3 / 3; }
-.button-6 { grid-area: 2 / 3 / 3 / 4; }
+.button-1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.button-2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.button-3 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.button-4 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.button-5 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.button-6 {
+    grid-area: 2 / 3 / 3 / 4;
+}
 
 .page-button {
     width: 8rem;
@@ -221,7 +260,8 @@ article {
     display: flex;
     gap: 0.5rem;
     flex-direction: column-reverse;
-    justify-content: center;align-items: center;
+    justify-content: center;
+    align-items: center;
     background-color: #ffce96;
     color: #00303b;
     box-shadow: 0 4px 4px black;
