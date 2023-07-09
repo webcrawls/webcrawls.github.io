@@ -329,15 +329,30 @@ article {
     color: #e1dad6;
     width: 100%;
     border-radius: 1rem;
-    position: relative;
     background: linear-gradient(45deg, var(--color-a), var(--color-b));
 }
 
-.project-content {
+.project-card-large {
+    min-height: 7rem;
+}
+
+.project-content-wrapper {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    position: relative;
     gap: 1rem;
+}
+
+.project-content {
+    flex: 1;
+}
+
+.project-next {
+    background-color: unset;
+    border: 1px solid var(--theme-color-1);
+    border-radius: 0.35rem;
+    color: var(--theme-color-1);
 }
 
 .project-thumb {
