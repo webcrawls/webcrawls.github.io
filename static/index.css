@@ -200,8 +200,8 @@ article {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 8px;
-    grid-row-gap: 8px;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
     justify-content: space-evenly;
     justify-items: center;
     align-content: space-evenly;
@@ -246,12 +246,17 @@ article {
     transition: transform 0.25s;
 }
 
+.page-button:hover {
+    transform: translateY(-4px);
+}
+
 .shadow {
     position: relative;
     border-radius: 1rem !important;
 }
 
 .shadow::before {
+    transition: transform 0.25s;
     content: '';
     top: 0;
     left: 0;
@@ -263,10 +268,6 @@ article {
     border-radius: 1rem;
     transform: translateY(10px) translateX(8px);
     /*box-shadow: 0 4px 4px rgba(255, 255, 255, 0.48);*/
-}
-
-.page-button:hover {
-    transform: translateY(-4px);
 }
 
 .page-button img {

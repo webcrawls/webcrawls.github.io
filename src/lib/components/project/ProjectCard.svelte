@@ -60,7 +60,7 @@
     }
 </script>
 
-<article class="project-card project-card-{theme} shadow">
+<article class="project-card project-card-{theme}">
     <div class="project-title-wrapper">
         <h1 class="project-title">
             {#if author}
