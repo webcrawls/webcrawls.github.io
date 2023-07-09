@@ -354,3 +354,30 @@ article {
     flex-direction: column;
     gap: 2rem;
 }
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 0.5rem;
+    }
+
+    main {
+        max-width: 100%;
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .project-title-wrapper {
+        flex-direction: column;
+    }
+
+    .project-badges {
+        padding-block: 0.5rem;
+    }
+}
