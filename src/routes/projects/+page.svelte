@@ -7,9 +7,17 @@
                  url="https://github.com/webcrawls/pomo">
         <p slot="description">A simple note-taking application for the web.</p>
     </ProjectCard>
+    <ProjectCard name="webcrawls.github.io" badges={["svelte", "js", "css"]}
+                 url="https://github.com/webcrawls/webcrawls.github.io">
+        <p slot="description">My personal page.</p>
+    </ProjectCard>
+    <ProjectCard name="webcrawls.neocities.org" badges={["svelte", "js", "css", "11ty"]}
+                 url="https://webcrawls.neocities.org">
+        <p slot="description">A "more fun" web page, where I experiment with design and project ideas.</p>
+    </ProjectCard>
     <ProjectCard author="apocrypha" name="apocrypha.css" badges={["css"]}
-                 url="https://github.com/apocrypha/apocrypha.css">
-        <p slot="description">A CSS theme designed around simplicity.</p>
+                 url="https://github.com/apocryphaCSS/apocrypha.css">
+        <p slot="description">A CSS theme designed around simplicity. Lead by my friend, I occasionally contribute :)</p>
     </ProjectCard>
     <ProjectCard author="incendo" name="interfaces" badges={["minecraft", "java"]}
                  url="https://github.com/incendo/interfaces">
