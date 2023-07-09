@@ -1,3 +1,3 @@
 <div class="page-title">
-    <slot></slot>
+	<slot />
 </div>
