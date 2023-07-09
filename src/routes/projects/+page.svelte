@@ -1,6 +1,6 @@
 <script lang="ts">
     import ProjectCard from '$lib/components/project/ProjectCard.svelte';
-    import {interfaces, pages, pomo} from "$lib/projects.js";
+    import {interfaces, pages, pomo, startmc} from "$lib/projects.js";
 </script>
 
 <div class="projects">
@@ -46,8 +46,8 @@
             name="startmc.sh"
             badges={['minecraft', 'svelte', 'js', 'css']}
             url="https://github.com/startmc/startmc.sh"
+            children={startmc}
     >
-        <p slot="description">A website which generates startup scripts for a Minecraft server.</p>
     </ProjectCard>
     <ProjectCard
             author="webcrawls"
