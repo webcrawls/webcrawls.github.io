@@ -91,8 +91,8 @@
                     <p bind:this={textElement}
                        class="child-holder"
                        style="position:absolute;bottom:0;width:80%;"
-                       in:fade={{ duration: 200 }}
-                       out:fade={{ duration: 200 }}>{@html currentText}</p>
+                       in:fly={{ x: 50, duration: 50 }}
+                       out:fly={{ x: -50, duration: 50 }}>{@html currentText}</p>
                 {/key}
             {:else}
                 <slot name="description"/>
