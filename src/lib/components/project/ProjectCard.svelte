@@ -1,5 +1,5 @@
 <script lang="ts">
-    import {fade} from 'svelte/transition';
+    import {fly} from 'svelte/transition';
     import {browser} from "$app/environment";
 
     export let author: string | undefined;
@@ -7,6 +7,7 @@
     export let name: string;
     export let url: string;
     export let children: string[] = [];
+    export let theme: "blue" | "gray" | "purple" = "blue";
 
     let childIndex: number = 0;
     let textElement: HTMLElement;
@@ -59,7 +60,7 @@
     }
 </script>
 
-<article class="project-card project-card-blue">
+<article class="project-card project-card-{theme}">
     <div class="project-title-wrapper">
         <h1 class="project-title">
             {#if author}

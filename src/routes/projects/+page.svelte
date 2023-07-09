@@ -10,17 +10,20 @@
             badges={['svelte', 'js', 'css']}
             url="https://github.com/webcrawls/pomo"
             children={pomo}
+            theme="gray"
     />
     <ProjectCard
             name="webcrawls.github.io"
             badges={['svelte', 'js', 'css']}
             url="https://github.com/webcrawls/webcrawls.github.io"
             children={pages}
+            theme="gray"
     />
     <ProjectCard
             name="webcrawls.neocities.org"
             badges={['svelte', 'js', 'css', '11ty']}
             url="https://webcrawls.neocities.org"
+            theme="gray"
     >
         <p slot="description">My experimental webpage, where I play around with random design ideas.</p>
     </ProjectCard>
@@ -29,6 +32,7 @@
             name="apocrypha.css"
             badges={['css']}
             url="https://github.com/apocryphaCSS/apocrypha.css"
+            theme="gray"
     >
         <p slot="description">
             A CSS theme designed around simplicity. Lead by my friend, I occasionally contribute :)

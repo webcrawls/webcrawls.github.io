@@ -332,6 +332,20 @@ article {
     --color-alt: var(--theme-color-2);
 }
 
+.project-card-gray {
+    --color-a: #313336;
+    --color-b: #627b86;
+    --color-text: #f5f5f5;
+    --color-alt: #212e50;
+}
+
+.project-card-blue {
+    --color-a: #222a56;
+    --color-b: #488398;
+    --color-text: var(--theme-color-4);
+    --color-alt: var(--theme-color-2);
+}
+
 .project-card {
     color: var(--color-text);
     width: 100%;
