@@ -189,23 +189,18 @@ article {
 }
 
 .badge {
-    opacity: 0.7;
     display: flex;
     flex-direction: row;
-    flex: 1;
     justify-content: center;
     align-items: center;
-    padding-inline: 0.75rem;
-    padding-block: 0.45rem;
     border-radius: 0.45rem;
     background-color: var(--theme-color-3);
     color: var(--theme-color-1);
     text-decoration: none;
-    height: 31px;
-    min-width: 88px;
-    font-weight: bold;
-    font-size: 1.1rem;
+    font-weight: normal;
+    user-select: none;
     transition: opacity 0.25s;
+    padding-inline: 0.25rem;
 }
 
 .badge:hover {
@@ -279,4 +274,83 @@ article {
 
 .badge-jb {
     padding: 0;
+}
+
+.project-title {
+    font-size: 1.35rem;
+}
+
+.project-badges {
+    flex: 1;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.75rem;
+}
+
+.badge-css {
+    background-color: #3c77ff;
+    color: white;
+}
+
+.badge-js {
+    background-color: #ffef3c;
+    color: black;
+}
+
+.badge-svelte {
+    background-color: white;
+    color: #cb5900;
+}
+
+.badge-java {
+    background-color: #6394a9;
+    color: #ffeadb;
+}
+
+.project-title-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.project-title-author {
+    font-weight: normal;
+}
+
+.project-title-slash {
+    font-weight: normal;
+}
+
+.project-title-name {
+
+}
+
+.project-card {
+    --color-a: #222a56;
+    --color-b: #488398;
+    color: #e1dad6;
+    width: 100%;
+    border-radius: 1rem;
+    position: relative;
+    background: linear-gradient(45deg, var(--color-a), var(--color-b));
+}
+
+.project-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.project-thumb {
+    height: 100%;
+    max-width: 3rem;
+}
+
+.projects {
+    padding-block: 2.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
