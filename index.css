@@ -313,10 +313,12 @@ article {
 
 .project-title-author {
     font-weight: normal;
+    opacity: 0.7;
 }
 
 .project-title-slash {
     font-weight: normal;
+    opacity: 0.7;
 }
 
 .project-title-name {
