@@ -6,7 +6,9 @@ export const interfaces = [
 ]
 export const pages = [
     "My personal page.",
-    "It's probably closer to a resume than anything... :D"
+    "I've tried to make a site like this <i>many</i> times. I think my biggest issue is... what to put here?",
+    "For now, I've settled on documenting my projects and linking out to my other online presences.",
+    "Recently, I've set up a static site auto-deploy with GitHub Actions. It's cool to see the versatility of SvelteKit in practice."
 ]
 export const pomo = [
     "A note-taking web application written in Svelte.",
