@@ -13,11 +13,12 @@
     </ProjectCard>
     <ProjectCard name="webcrawls.neocities.org" badges={["svelte", "js", "css", "11ty"]}
                  url="https://webcrawls.neocities.org">
-        <p slot="description">A "more fun" web page, where I experiment with design and project ideas.</p>
+        <p slot="description">My experimental webpage, where I play around with random design ideas.</p>
     </ProjectCard>
     <ProjectCard author="apocrypha" name="apocrypha.css" badges={["css"]}
                  url="https://github.com/apocryphaCSS/apocrypha.css">
-        <p slot="description">A CSS theme designed around simplicity. Lead by my friend, I occasionally contribute :)</p>
+        <p slot="description">A CSS theme designed around simplicity. Lead by my friend, I occasionally contribute
+            :)</p>
     </ProjectCard>
     <ProjectCard author="incendo" name="interfaces" badges={["minecraft", "java"]}
                  url="https://github.com/incendo/interfaces">
