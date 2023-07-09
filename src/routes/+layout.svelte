@@ -1,5 +1,5 @@
 <main>
-	<header>
+	<header class="shadow">
 		<h1>/home/webcrawls</h1>
 		<nav class="page-nav">
 			<p>~</p>
