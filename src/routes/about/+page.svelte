@@ -24,4 +24,5 @@
 <PageTitle>
 	<h3>discord: @webcrawls</h3>
 	<h3>mail: contact at kaden.🤫</h3>
+	<h3>the don: @kaden@torontodiy.xyz</h3>
 </PageTitle>
