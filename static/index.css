@@ -202,8 +202,8 @@ body {
 .project-card-blue {
     --color-a: #222a56;
     --color-b: #488398;
-    --color-text: var(--theme-color-4);
-    --color-alt: var(--theme-color-2);
+    --color-text: #F1F2DA;
+    --color-alt: #FF7777;
 }
 
 .project-card {
