@@ -77,7 +77,7 @@
             <p></p>
         </ProjectContent>
     </Project>
-    <Project name="'personal gateway'"
+    <Project name="personal gateway"
              badges={['tbd']}>
         <ProjectContent
                 items={[
