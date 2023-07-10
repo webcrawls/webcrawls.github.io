@@ -384,6 +384,12 @@ article {
     overflow: hidden;
     position: relative;
     z-index: 1;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.opaque {
+    opacity: 1;
     cursor: pointer;
 }
 
