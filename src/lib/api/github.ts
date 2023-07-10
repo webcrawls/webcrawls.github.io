@@ -1,19 +1,34 @@
 import {Octokit} from "octokit";
-import {browser} from "$app/environment";
 
 export const githubApi = (key: string) => {
     const octokit = new Octokit({auth: key});
+    const commitCache = {}
 
     const getCommits = async (owner: string, repository: string): Promise<{}[]> => {
-        const commits = await octokit.request("GET /repos/{owner}/{repo}/commits", {
-            owner,
-            repo: repository,
-            per_page: 7
-        })
+        if (commitCache[`${owner}/${repository}`]) {
+            console.log("CacheD :D")
+            return Promise.resolve(commitCache[`${owner}/${repository}`])
+        }
 
+        let commits;
+
+        try {
+            commits = await octokit.request("GET /repos/{owner}/{repo}/commits", {
+                owner,
+                repo: repository,
+                per_page: 7,
+                request: {
+                    timeout: 100
+                }
+            })
+        } catch (e) {
+            return []
+        }
+
+        // const commits = {}
         const res = []
 
-        for (const value of commits.data) {
+        for (const value of (commits?.data ?? [])) {
             res.push({
                 author: value?.commit?.author?.name,
                 message: value?.commit?.message,
@@ -21,11 +36,11 @@ export const githubApi = (key: string) => {
                 date: value?.commit?.author?.date
             })
         }
+
+        commitCache[`${owner}/${repository}`] = res
+
         return res
     }
 
     return {getCommits}
 }
-
-// @ts-ignore
-if (browser) document.github = githubApi()
