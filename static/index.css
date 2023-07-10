@@ -196,6 +196,13 @@ body {
     --color-alt: var(--theme-color-2);
 }
 
+.project-card-green {
+    --color-a: #6bbd55;
+    --color-b: #b6dcab;
+    --color-text: black;
+    --color-alt: green;
+}
+
 .project-card-gray {
     --color-a: #313336;
     --color-b: #627b86;
