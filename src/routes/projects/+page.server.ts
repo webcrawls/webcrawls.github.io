@@ -5,6 +5,7 @@ const repositories = [
     {owner: 'webcrawls', repo: 'bonk'},
     {owner: 'webcrawls', repo: 'pomo'},
     {owner: 'webcrawls', repo: 'webcrawls.github.io'},
+    {owner: 'apocryphaCSS', repo: 'apocrypha.css'}
 ]
 
 const github = githubApi(import.meta.env.VITE_GITHUB_TOKEN)

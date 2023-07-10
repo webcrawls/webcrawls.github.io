@@ -36,7 +36,7 @@
              badges={['css']}
              url="https://github.com/apocryphaCSS/apocrypha.css"
              theme="gray">
-        <ProjectContent>
+        <ProjectContent items={['slot', projects['apocryphaCSS/apocrypha.css']]}>
             <p>A CSS theme designed around simplicity. Lead by my friend, I occasionally contribute :)</p>
         </ProjectContent>
     </Project>

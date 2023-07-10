@@ -355,11 +355,13 @@ article {
     --color: #e5debf;
     height: 7rem;
     overflow: hidden;
-    /*overflow-y: scroll;*/
+    overflow-y: scroll;
     background-color: #192433;
+    border: 1px solid var(--color);
     color: var(--color);
     padding: 0;
     margin: 0;
+    scrollbar-width: thin;
 }
 
 .commit-view-title {
