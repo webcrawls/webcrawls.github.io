@@ -71,14 +71,12 @@
 </PageSection>
 
 <PageSection title="planned">
-    <Project name="unnamed discord bot"
-             badges={['tbd']}>
+    <Project name="unnamed discord bot" theme="red">
         <ProjectContent>
             <p></p>
         </ProjectContent>
     </Project>
-    <Project name="personal gateway"
-             badges={['tbd']}>
+    <Project name="personal gateway" theme="red">
         <ProjectContent
                 items={[
                     'slot',
@@ -93,6 +91,14 @@
 </PageSection>
 
 <PageSection title="dead">
+    <Project name="CRYPTOCADE"
+             badges={['minecraft']}
+             theme="red">
+        <ProjectContent items={['slot']}>
+            <p>A Minecraft server network, attempted by a couple of friends, along with myself, in the summer of 2019.
+                More notes coming soon :D</p>
+        </ProjectContent>
+    </Project>
 
 </PageSection>
 

@@ -210,6 +210,13 @@ body {
     --color-alt: #FF7777;
 }
 
+.project-card-red {
+    --color-a: #b96666;
+    --color-b: #efb8b8;
+    --color-text: #361818;
+    --color-alt: #ecf0ff;
+}
+
 .project-card {
     color: var(--color-text);
     border-radius: 0.75rem;
