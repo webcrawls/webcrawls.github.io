@@ -1,6 +1,6 @@
 <script lang="ts">
     import ProjectCard from '$lib/components/project/ProjectCard.svelte';
-    import {interfaces, pages, pomo, startmc} from "$lib/projects.js";
+    import {interfaces, pages, pomo, rsp, startmc} from "$lib/projects.js";
 </script>
 
 <div class="projects">
@@ -67,5 +67,6 @@
             name="RandomSpawnPlus"
             badges={['minecraft']}
             url="https://www.spigotmc.org/resources/randomspawnplus-optimized-wild-and-random-spawn-1-8-x-1-15-x.69586/"
+            children={rsp}
     />
 </div>

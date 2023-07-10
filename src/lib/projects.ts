@@ -28,3 +28,9 @@ export const startmc = [
     "We built it over a weekend, showed it to the community, and started to gain some traction! The concept was simple, but filled a large enough need that it was commonly shared to newcomers.",
     "Eventually, development slowed, and <a href='https://flags.sh'>flags.sh came along</a> to refine the concept. It's a really great site, and I'm happy to have partly inspired it :D"
 ]
+
+export const rsp = [
+    "Technically, my first release on SpigotMC :D",
+    "RandomSpawnPlus was a pretty simple Minecraft mod, allowing you to teleport to a random position in the world using a command.",
+    "It's pretty old, but I'm proud that it managed to get 14,000 downloads :)"
+]
