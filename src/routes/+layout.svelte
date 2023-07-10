@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Pill from "$lib/components/pill/Pill.svelte";
+    // import Pill from "$lib/components/pill/Pill.svelte";
     import {setContext} from "svelte";
 
     export let data
