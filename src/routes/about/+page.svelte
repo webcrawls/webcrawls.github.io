@@ -17,7 +17,7 @@
 <h1>~</h1>
 <article>
 	<p>
-		If you're looking to contact me, send me a message one one of the following platforms. I'll do
+		If you're looking to contact me, send me a message on one of the following platforms. I'll do
 		my best to respond quickly :)
 	</p>
 </article>
