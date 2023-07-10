@@ -1,17 +1,14 @@
-<div class="button-container">
-	<a class="page-button button-1" href="https://github.com/webcrawls"
-		><img src="/img/github.svg" /></a
-	>
-	<a class="page-button button-2" href="https://twitch.tv/webcrawls"
-		><img src="/img/twitch.svg" /></a
-	>
-	<a class="page-button button-3" href="https://twitter.com/webcrawlstv"
-		><img src="/img/twitter.svg" /></a
-	>
-	<a class="page-button button-4" href="https://last.fm/user/webcrawls"
-		><img src="/img/lastfm.svg" /></a
-	>
-	<a class="page-button button-5" rel="me" href="https://torontodiy.xyz/@kaden"
-		><img src="/img/mastodon.svg" /></a
-	>
-</div>
+<script lang="ts">
+    import PageSection from "$lib/components/layout/PageSection.svelte";
+    import LandingButton from "$lib/components/layout/LandingButton.svelte";
+</script>
+
+<PageSection title="webcrawls on the 'net">
+    <div class="landing-buttons">
+        <LandingButton name="github" url="https://github.com/webcrawls" image="/img/github.svg"/>
+        <LandingButton name="twitch" url="https://twitch.tv/webcrawls" image="/img/twitch.svg"/>
+        <LandingButton name="twitter" url="https://twitter.com/webcrawlstv" image="/img/twitter.svg"/>
+        <LandingButton name="last.fm" url="https://last.fm/user/webcrawls" image="/img/lastfm.svg"/>
+        <LandingButton name="mastodon" url="https://torontodiy.xyz/@kaden" image="/img/mastodon.svg"/>
+    </div>
+</PageSection>

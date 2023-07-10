@@ -3,7 +3,7 @@
     import {onMount} from "svelte";
     import {fly} from "svelte/transition";
     import {browser} from "$app/environment";
-    import CommitView from "$lib/components/project/CommitView.svelte";
+    import CommitView from "$lib/components/page/project/CommitView.svelte";
 
     export let items: (string | SvelteComponent | { commits: CommitData[] })[] = ['slot'];
 
