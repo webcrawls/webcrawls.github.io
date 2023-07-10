@@ -10,26 +10,26 @@
     const {projects} = data
 </script>
 
-<PageSection title="active">
+<PageSection title="active 🟢">
     <Project author="webcrawls"
              name="pomo"
              badges={['svelte', 'js', 'css']}
              url="https://github.com/webcrawls/pomo"
-             theme="gray">
+             theme="green">
         <ProjectContent items={[...pomo, projects['webcrawls/pomo']]}/>
     </Project>
 
     <Project name="webcrawls.github.io"
              badges={['svelte', 'js', 'css']}
              url="https://github.com/webcrawls/webcrawls.github.io"
-             theme="gray">
+             theme="green">
         <ProjectContent items={[...pages, projects['webcrawls/webcrawls.github.io']]}/>
     </Project>
 
     <Project name="webcrawls.neocities.org"
              badges={['svelte', 'js', 'css', '11ty']}
              url="https://webcrawls.neocities.org"
-             theme="gray">
+             theme="green">
         <ProjectContent><p>My experimental webpage, where I play around with random design ideas.</p></ProjectContent>
     </Project>
 
@@ -37,14 +37,14 @@
              name="apocrypha.css"
              badges={['css']}
              url="https://github.com/apocryphaCSS/apocrypha.css"
-             theme="gray">
+             theme="green">
         <ProjectContent items={['slot', projects['apocryphaCSS/apocrypha.css']]}>
             <p>A CSS theme designed around simplicity. Lead by my friend, I occasionally contribute :)</p>
         </ProjectContent>
     </Project>
 </PageSection>
 
-<PageSection title="loved">
+<PageSection title="loved ❤️">
     <TextWrapper>
         <p>A list of projects I consider complete, or that I no longer spend much time contributing to.</p>
         <p>For some, I may intend to return in the future. Others will remain here as a digital time capsule :D</p>
@@ -70,7 +70,30 @@
     </Project>
 </PageSection>
 
-<PageSection title="planned">
+<PageSection title="dead 💀">
+    <TextWrapper>
+        <p>Not all projects make it, and sometimes, we need to pour one out for those we lost along the way.</p>
+        <p>That being said, failed projects offer us a wealth of learning opportunities. Here, I recount my own list of
+            dead projects, and what I learned.</p>
+    </TextWrapper>
+    <Project name="CRYPTOCADE"
+             badges={['minecraft']}
+             theme="gray">
+        <ProjectContent items={['slot']}>
+            <p>A Minecraft server network, attempted by a couple of friends, along with myself, in the summer of 2019.
+                More notes coming soon :D</p>
+        </ProjectContent>
+    </Project>
+
+    <Project name="RandomSpawnPlus"
+             badges={['minecraft']}
+             theme="gray"
+             url="https://www.spigotmc.org/resources/randomspawnplus-optimized-wild-and-random-spawn-1-8-x-1-15-x.69586/">
+        <ProjectContent items={rsp}/>
+    </Project>
+</PageSection>
+
+<PageSection title="planned 🚧">
     <Project name="unnamed discord bot" theme="red">
         <ProjectContent>
             <p></p>
@@ -87,29 +110,6 @@
                 project, 'personal-gateway' would provide an all-encompassing service to expose personal details on the
                 web.</p>
         </ProjectContent>
-    </Project>
-</PageSection>
-
-<PageSection title="dead">
-    <TextWrapper>
-        <p>Not all projects make it, and sometimes, we need to pour one out for those we lost along the way.</p>
-        <p>That being said, failed projects offer us a wealth of learning opportunities. Here, I recount my own list of
-            dead projects, and what I learned.</p>
-    </TextWrapper>
-    <Project name="CRYPTOCADE"
-             badges={['minecraft']}
-             theme="red">
-        <ProjectContent items={['slot']}>
-            <p>A Minecraft server network, attempted by a couple of friends, along with myself, in the summer of 2019.
-                More notes coming soon :D</p>
-        </ProjectContent>
-    </Project>
-
-    <Project name="RandomSpawnPlus"
-             badges={['minecraft']}
-             theme="red"
-             url="https://www.spigotmc.org/resources/randomspawnplus-optimized-wild-and-random-spawn-1-8-x-1-15-x.69586/">
-        <ProjectContent items={rsp}/>
     </Project>
 </PageSection>
 
