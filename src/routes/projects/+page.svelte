@@ -60,7 +60,7 @@
             url="https://github.com/webcrawls/bonk"
     >
         <p slot="description">
-            A Minecraft minigame that's been developed off-and-on for the past 3-ish years.
+            A Minecraft minigame, developed off-and-on for the past 3 years.
         </p>
     </ProjectCard>
     <ProjectCard
