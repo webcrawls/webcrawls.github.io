@@ -32,5 +32,5 @@ export const startmc = [
 export const rsp = [
     "Technically, my first release on SpigotMC :D",
     "RandomSpawnPlus was a pretty simple Minecraft mod, allowing you to teleport to a random position in the world using a command.",
-    "It's pretty old, but I'm proud that it managed to get 14,000 downloads :)"
+    "Sadly, I lost the source code years ago. My coding ability was very weak compared to today, but I'm proud that it managed to get 14,000 downloads :)"
 ]
