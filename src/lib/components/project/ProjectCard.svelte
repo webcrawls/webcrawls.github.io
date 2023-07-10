@@ -1,6 +1,7 @@
 <script lang="ts">
     import {fly} from 'svelte/transition';
     import {browser} from "$app/environment";
+    import {onMount} from "svelte";
 
     export let author: string | undefined;
     export let badges: string[] = [];
@@ -15,6 +16,7 @@
     let nextElement: HTMLElement;
     let nextBgWidth: number = 0;
     let currentText: string = "";
+    let opaque: boolean = false;
 
     const handleText = () => {
         let nextIndex = childIndex + 1;
@@ -58,6 +60,11 @@
         const progress = childIndex / (children.length - 1)
         nextBgWidth = Math.round(progress * 100)
     }
+
+    onMount(() => {
+        if (!browser) return
+        opaque = true
+    })
 </script>
 
 <article class="project-card project-card-{theme}">
@@ -101,7 +108,8 @@
         </div>
         {#if currentText}
             <div class="project-aside">
-                <button bind:this={nextElement} class="project-next" on:click|preventDefault={handleText}>
+                <button bind:this={nextElement} class:opaque={opaque} class="project-next"
+                        on:click|preventDefault={handleText}>
                     <span class="project-next-bg" style="width: {nextBgWidth}%;"></span>
                     more
                 </button>
