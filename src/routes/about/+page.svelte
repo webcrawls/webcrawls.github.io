@@ -18,5 +18,10 @@
     <TextWrapper>
         <p>If you're looking to contact me, hit me up on one of the following platforms. I'll do my best to respond
             quickly :)</p>
+        <ul>
+            <li>the mail (not snail): contact at kaden.🤫</li>
+            <li>the don: @kaden@torontodiy.xyz</li>
+            <li>the cord: @webcrawls</li>
+        </ul>
     </TextWrapper>
 </PageSection>
