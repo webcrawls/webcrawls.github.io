@@ -1,6 +1,6 @@
 <script lang="ts">
     import Project from '$lib/components/page/project/ProjectCard.svelte';
-    import {interfaces, pages, pomo, rsp} from "$lib/projects.js";
+    import {interfaces, pages, pomo, rsp, startmc} from "$lib/projects.js";
     import ProjectContent from "$lib/components/page/project/content/ProjectContent.svelte";
     import PageSection from "$lib/components/layout/PageSection.svelte";
     import TextWrapper from "$lib/components/layout/wrapper/TextWrapper.svelte";
@@ -63,10 +63,10 @@
             <p>A Minecraft minigame, developed off-and-on for the past 3 years.</p>
         </ProjectContent>
     </Project>
-    <Project name="RandomSpawnPlus"
-             badges={['minecraft']}
-             url="https://www.spigotmc.org/resources/randomspawnplus-optimized-wild-and-random-spawn-1-8-x-1-15-x.69586/">
-        <ProjectContent items={rsp}/>
+    <Project author="startmc"
+             name="startmc.sh"
+             url="https://github.com/startmc/startmc.sh">
+        <ProjectContent items={[...startmc]}/>
     </Project>
 </PageSection>
 
@@ -91,6 +91,11 @@
 </PageSection>
 
 <PageSection title="dead">
+    <TextWrapper>
+        <p>Not all projects make it, and sometimes, we need to pour one out for those we lost along the way.</p>
+        <p>That being said, failed projects offer us a wealth of learning opportunities. Here, I recount my own list of
+            dead projects, and what I learned.</p>
+    </TextWrapper>
     <Project name="CRYPTOCADE"
              badges={['minecraft']}
              theme="red">
@@ -100,6 +105,12 @@
         </ProjectContent>
     </Project>
 
+    <Project name="RandomSpawnPlus"
+             badges={['minecraft']}
+             theme="red"
+             url="https://www.spigotmc.org/resources/randomspawnplus-optimized-wild-and-random-spawn-1-8-x-1-15-x.69586/">
+        <ProjectContent items={rsp}/>
+    </Project>
 </PageSection>
 
 <noscript>

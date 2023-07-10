@@ -6,7 +6,7 @@
     export let theme: "blue" | "gray" | "purple" = "blue";
 </script>
 
-<article class="project-card project-card-{theme}">
+<article class="project-card project-card-{theme}" id="{name}">
     <header class="project-title-wrapper">
         <h1 class="project-title">
             {#if author}
