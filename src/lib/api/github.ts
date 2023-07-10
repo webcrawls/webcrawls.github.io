@@ -17,7 +17,7 @@ export const githubApi = (key: string) => {
             res.push({
                 author: value?.commit?.author?.name,
                 message: value?.commit?.message,
-                url: value?.commit?.url,
+                url: value?.html_url,
                 date: value?.commit?.author?.date
             })
         }
