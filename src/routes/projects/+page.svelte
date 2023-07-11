@@ -1,9 +1,9 @@
 <script lang="ts">
     import Project from '$lib/components/page/project/ProjectCard.svelte';
-    import {interfaces, pages, pomo, rsp, startmc} from "$lib/projects.js";
+    import {bat, interfaces, pages, pomo, rsp, startmc} from "$lib/projects.js";
     import ProjectContent from "$lib/components/page/project/content/ProjectContent.svelte";
     import PageSection from "$lib/components/layout/PageSection.svelte";
-    import TextWrapper from "$lib/components/layout/wrapper/TextWrapper.svelte";
+    import TextWrapper from "$lib/components/layout/text/TextWrapper.svelte";
 
     export let data
 
@@ -68,23 +68,14 @@
              url="https://github.com/startmc/startmc.sh">
         <ProjectContent items={[...startmc]}/>
     </Project>
+<!--    <Project author="NearVanilla"-->
+<!--             name="bat"-->
+<!--             url="https://github.com/NearVanilla/bat">-->
+<!--        <ProjectContent items={[...bat]}/>-->
+<!--    </Project>-->
 </PageSection>
 
 <PageSection title="dead 💀">
-    <TextWrapper>
-        <p>Not all projects make it, and sometimes, we need to pour one out for those we lost along the way.</p>
-        <p>That being said, failed projects offer us a wealth of learning opportunities. Here, I recount my own list of
-            dead projects, and what I learned.</p>
-    </TextWrapper>
-    <Project name="CRYPTOCADE"
-             badges={['minecraft']}
-             theme="gray">
-        <ProjectContent items={['slot']}>
-            <p>A Minecraft server network, attempted by a couple of friends, along with myself, in the summer of 2019.
-                More notes coming soon :D</p>
-        </ProjectContent>
-    </Project>
-
     <Project name="RandomSpawnPlus"
              badges={['minecraft']}
              theme="gray"
@@ -93,33 +84,11 @@
     </Project>
 </PageSection>
 
-<PageSection title="planned 🚧">
-    <Project name="unnamed discord bot" theme="red">
-        <ProjectContent>
-            <p></p>
-        </ProjectContent>
-    </Project>
-    <Project name="personal gateway" theme="red">
-        <ProjectContent
-                items={[
-                    'slot',
-                    'It would integrate with services, such as Steam, GitHub, or last.fm, and provide JSON endpoints to access service statistics.',
-                    'For example, you could choose to expose things like your favourite Steam game, or latest active GitHub projects, and read these values into your own website.',
-                    'This project would be a great excuse to learn Rust, and to buff up my backend architecture skills :D']}>
-            <p>A spiritual successor of my <a href="https://github.com/webcrawls/current-song-worker">current-song-worker</a>
-                project, 'personal-gateway' would provide an all-encompassing service to expose personal details on the
-                web.</p>
-        </ProjectContent>
-    </Project>
-</PageSection>
-
 <noscript>
     <TextWrapper>
-        <p>Hey, JavaScript-disabling netizen!</p>
-        <p>This page features expanded descriptions for certain projects, but they're unavailable without
-            JavaScript.</p>
-        <p>Sorry! I tried my best to keep things accessible, but certain interactions were impossible without JS.</p>
-        <p>Let me know if you saw this, and as a token of good will, I'll... give you a cookie or something? :D</p>
-        <p>That's all. Thanks for checking out my site :)</p>
+        <p>Hello!</p>
+        <p>Certain projects have additional descriptions, but they're unavailable in a no-JS context.</p>
+        <p>I tried my best to keep things accessible, and I think I've struck an OK balance.</p>
+        <p>Sorry I couldn't provide the full experience to you, and thanks for checking out my site :)</p>
     </TextWrapper>
 </noscript>

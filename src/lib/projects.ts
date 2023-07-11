@@ -1,3 +1,5 @@
+import BatContextContent from "$lib/components/page/project/content/bat/BatContextContent.svelte";
+
 export const interfaces = [
     "A builder-style user interface library for Minecraft servers.",
     "I initially started interfaces back in ~2019, to solve the problem of efficiently writing user interfaces for Minecraft servers.",
@@ -30,7 +32,12 @@ export const startmc = [
 ]
 
 export const rsp = [
-    "Technically, my first release on SpigotMC :D",
-    "RandomSpawnPlus was a pretty simple Minecraft mod, allowing you to teleport to a random position in the world using a command.",
+    "My first Minecraft plugin and (public) software project.",
+    "This was a pretty simple plugin, allowing you to teleport to a random position in the world using a command.",
     "Sadly, I lost the source code years ago. My coding ability was very weak compared to today, but I'm proud that it managed to get 14,000 downloads :)"
+]
+
+export const bat = [
+    "A simple tablist plugin for Velocity servers.",
+    BatContextContent
 ]

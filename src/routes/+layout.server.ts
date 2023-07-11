@@ -5,6 +5,6 @@ export const trailingSlash = true
 
 export const load: ServerLoad = () => {
     return {
-        date: new Date().getTime()
+        date: new Date().toDateString()
     }
 }

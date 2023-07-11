@@ -25,10 +25,9 @@
 
 
     $: item = items[index]
-    $: console.log({item})
     $: isText = typeof item === "string" && item !== "slot"
-    $: isComponent = typeof item === "object" && !item.commits
     $: isCommit = typeof item === "object" && !!item.commits
+    $: isComponent = typeof item === "function"
     $: isSlot = item === "slot"
     $: item && setTimeout(updateElements, 5)
 
@@ -74,38 +73,38 @@
         loaded = true
     })
 
+    $: console.log({isText, isComponent, isCommit, isSlot})
+    $: console.log(typeof item)
 </script>
 
-<main class="project-content-wrapper">
-    <div class="project-content" style="min-height: 3rem;" bind:this={wrapper}>
-        {#key item}
-            <div style='position: absolute;width: 100%;'
-                 in:fly={{x: 50, duration: 50}}
-                 out:fly={{x: -50, duration: 50}}>
-                {#if isText}
-                    <p bind:this={childEl}>{@html item}</p>
-                {:else if isSlot}
-                    <div bind:this={childEl}>
-                        <slot></slot>
-                    </div>
-                {:else if isComponent}
-                    <svelte:component this={item} bind:this={childEl}/>
-                {:else if isCommit}
-                    <div bind:this={childEl}>
-                        <CommitView commits="{item.commits}"/>
-                    </div>
-                {/if}
-            </div>
-        {/key}
-    </div>
-    <div class="project-aside">
-        {#if items.length > 1}
-            <button bind:this={moreEl}
-                    class:opaque={loaded} class="project-next"
-                    on:click|preventDefault={more}>
-                <span class="project-next-bg" style="width: {moreBgWidth}%;"></span>
-                more
-            </button>
-        {/if}
-    </div>
-</main>
+<div class="project-content" style="min-height: 3rem;" bind:this={wrapper}>
+    {#key item}
+        <div style='position: absolute;width: 100%;'
+             in:fly={{x: 50, duration: 50}}
+             out:fly={{x: -50, duration: 50}}>
+            {#if isText}
+                <p bind:this={childEl}>{@html item}</p>
+            {:else if isSlot}
+                <div bind:this={childEl}>
+                    <slot></slot>
+                </div>
+            {:else if isComponent}
+                <div bind:this={childEl}>
+                    <svelte:component this={item}/>
+                </div>
+            {:else if isCommit}
+                <div bind:this={childEl}>
+                    <CommitView commits="{item.commits}"/>
+                </div>
+            {/if}
+        </div>
+    {/key}
+</div>
+{#if items.length > 1}
+    <button bind:this={moreEl}
+            class:opaque={loaded} class="project-next"
+            on:click|preventDefault={more}>
+        <span class="project-next-bg" style="width: {moreBgWidth}%;"></span>
+        more
+    </button>
+{/if}

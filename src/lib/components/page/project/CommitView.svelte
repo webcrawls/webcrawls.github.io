@@ -3,8 +3,8 @@
 
     export let commits: any[]
 
-    let date = getContext("date")
-    $: dateText = `${date.getMonth()}/${date.getDay()}/${date.getYear()}`
+    let date: Date = getContext("date")
+    $: dateText = `${date.getMonth()}/${date.getDay()}/${date.getFullYear()}`
 </script>
 
 <ul class="commit-view">
