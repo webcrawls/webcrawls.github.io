@@ -1,6 +1,7 @@
 <script lang="ts">
     import {setContext} from "svelte";
     import PageNav from "$lib/components/layout/nav/PageNav.svelte";
+    import ThemeColours from "$lib/components/layout/ThemeColours.svelte";
 
     export let data
     let {date} = data
@@ -16,3 +17,5 @@
     <PageNav/>
     <slot></slot>
 </div>
+
+<ThemeColours/>
