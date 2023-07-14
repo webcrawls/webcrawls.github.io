@@ -7,7 +7,7 @@
     --sweetie-color-6: #a7f070;
     --sweetie-color-7: #38b764;
     --sweetie-color-8: #257179;
-    --sweetie-color-9: #29366f;
+    --sweetie-color-9: #24263a;
     --sweetie-color-10: #3b5dc9;
     --sweetie-color-11: #41a6f6;
     --sweetie-color-12: #73eff7;
@@ -211,13 +211,6 @@ body {
     opacity: 0.7;
 }
 
-.project-card-blue {
-    --color-a: #222a56;
-    --color-b: #488398;
-    --color-text: var(--theme-color-4);
-    --color-alt: var(--sweetie-color-13);
-}
-
 .project-card-green {
     --color-a: #6bbd55;
     --color-b: #b6dcab;
@@ -229,7 +222,7 @@ body {
     --color-a: var(--sweetie-color-10);
     --color-b: var(--sweetie-color-14);
     --color-text: var(--sweetie-color-1);
-    --color-alt: #212e50;
+    --color-alt: #dfe0e1;
 }
 
 .project-card-blue {
