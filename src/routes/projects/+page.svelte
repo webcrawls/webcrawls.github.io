@@ -1,6 +1,6 @@
 <script lang="ts">
     import Project from '$lib/components/page/project/ProjectCard.svelte';
-    import {bat, interfaces, pages, pomo, rsp, startmc} from "$lib/projects.js";
+    import {interfaces, pages, pomo, rsp, startmc} from "$lib/projects.js";
     import ProjectContent from "$lib/components/page/project/content/ProjectContent.svelte";
     import PageSection from "$lib/components/layout/PageSection.svelte";
     import TextWrapper from "$lib/components/layout/text/TextWrapper.svelte";
@@ -30,7 +30,7 @@
              badges={['svelte', 'js', 'css', '11ty']}
              url="https://webcrawls.neocities.org"
              theme="green">
-        <ProjectContent><p>My experimental webpage, where I play around with random design ideas.</p></ProjectContent>
+        <ProjectContent><p>A page I use to experiment with various web design ideas.</p></ProjectContent>
     </Project>
 
     <Project author="apocrypha"
@@ -40,6 +40,16 @@
              theme="green">
         <ProjectContent items={['slot', projects['apocryphaCSS/apocrypha.css']]}>
             <p>A CSS theme designed around simplicity. Lead by my friend, I occasionally contribute :)</p>
+        </ProjectContent>
+    </Project>
+    <Project author="webcrawls"
+             name="gmi-viewer"
+             url="https://github.com/webcrawls/gmi-viewer"
+             badges={['svelte', 'gemini']}
+             theme="gray">
+        <ProjectContent items={['slot', projects['webcrawls/gmi-viewer']]}>
+            <p>A simple web application to read and parse the .gmi file spec, rendering the document as you
+                write.</p>
         </ProjectContent>
     </Project>
 </PageSection>
@@ -68,11 +78,11 @@
              url="https://github.com/startmc/startmc.sh">
         <ProjectContent items={[...startmc]}/>
     </Project>
-<!--    <Project author="NearVanilla"-->
-<!--             name="bat"-->
-<!--             url="https://github.com/NearVanilla/bat">-->
-<!--        <ProjectContent items={[...bat]}/>-->
-<!--    </Project>-->
+    <!--    <Project author="NearVanilla"-->
+    <!--             name="bat"-->
+    <!--             url="https://github.com/NearVanilla/bat">-->
+    <!--        <ProjectContent items={[...bat]}/>-->
+    <!--    </Project>-->
 </PageSection>
 
 <PageSection title="dead 💀">
