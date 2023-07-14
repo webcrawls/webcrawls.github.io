@@ -2,11 +2,10 @@ import {Octokit} from "octokit";
 
 export const githubApi = (key: string) => {
     const octokit = new Octokit({auth: key});
-    const commitCache = {}
+    const commitCache: Record<string, any> = {}
 
     const getCommits = async (owner: string, repository: string): Promise<{}[]> => {
         if (commitCache[`${owner}/${repository}`]) {
-            console.log("CacheD :D")
             return Promise.resolve(commitCache[`${owner}/${repository}`])
         }
 

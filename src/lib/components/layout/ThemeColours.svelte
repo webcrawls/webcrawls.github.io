@@ -11,7 +11,6 @@
     // maybe the dumbest thing i've done. creates an array of [1,2,3,4,5...] from colourCount.
     $: indexes = [...Array(colourCount).keys()].map(i => i + 1)
     $: codes = indexes.map(i => style ? style.getPropertyValue(`--${theme}-color-${i}`) : '#ffffff')
-    $: console.log({indexes})
 </script>
 
 <div class="colour-container">

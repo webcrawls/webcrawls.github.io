@@ -21,9 +21,6 @@
     let isCommit: boolean = false
     let isSlot: boolean = false;
 
-    console.log({items})
-
-
     $: item = items[index]
     $: isText = typeof item === "string" && item !== "slot"
     $: isCommit = typeof item === "object" && !!item.commits
@@ -40,14 +37,11 @@
     };
     const updateElements = () => {
         if (!browser || !wrapper || !childEl) {
-            console.log({wrapper, childEl})
             return
         }
 
         const initialHeight = wrapper.offsetHeight
         const contentHeight = childEl.offsetHeight
-
-        console.log({initialHeight, contentHeight})
 
         const animation = wrapper.animate([
             {
@@ -72,9 +66,6 @@
         if (!browser) return
         loaded = true
     })
-
-    $: console.log({isText, isComponent, isCommit, isSlot})
-    $: console.log(typeof item)
 </script>
 
 <div class="project-content" style="min-height: 3rem;" bind:this={wrapper}>
